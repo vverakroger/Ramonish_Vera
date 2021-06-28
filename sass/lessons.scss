@@ -1,0 +1,20 @@
+@import "variables";
+
+/*Lessons*/
+
+#lessons{
+    background-color: $primario;
+    color: $blanco;
+    width: 100%;
+    height: 100vh;
+    padding-top: 15vh;
+    h4{
+        color: $terciario;
+    }
+    p{
+        color: $terciario;
+    }
+    .button{
+        color: $terciario;
+    }
+}

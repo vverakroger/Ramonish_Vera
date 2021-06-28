@@ -1,0 +1,29 @@
+@import "variables";
+
+/*Generic*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: $fontImprenta;
+    font-size: 8vw;
+}
+
+h2 {
+    font-family: $fontImprenta;
+    font-size: 6vw;
+}
+
+h3 {
+    font-family: $fontCursiva;
+    font-size: 2vw;
+}
+
+h4 {
+    font-family: $fontCursiva;
+    font-size: 1.4vw;
+}
