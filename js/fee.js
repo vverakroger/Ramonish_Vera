@@ -1,11 +1,11 @@
 class Fee{
-    constructor(anDuration, aPrice, aDiscount) {
-        this.Id = anId;
-        this.Password = aPassword;
+    constructor(aDuration, aPrice, aDiscount) {
+        this.Duration = aDuration;
+        this.Price = aPrice;
+        this.Discount = aDiscount;
     }
 }
 
-const student1 = new Student ("mail@gmail.com","abc123");
 
 function classesCost() {
     var userClasses = prompt("Enter how many classes per week you want: ");
