@@ -6,25 +6,21 @@ class Lesson{
     }
 }
 
-const lesson1 = new Lesson ("css/multimedia/class.png","Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!")
-const lesson2 = new Lesson ("css/multimedia/grammar.png","Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!")
-const lesson3 = new Lesson ("css/multimedia/practice.png","Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!")
+const lesson1 = new Lesson ("css/multimedia/class.png","Lorem ipsum dolor sit amet consectetur, adipisicing elit.")
+const lesson2 = new Lesson ("css/multimedia/grammar.png","Lorem ipsum dolor sit amet consectetur, adipisicing elit.")
+const lesson3 = new Lesson ("css/multimedia/practice.png","Lorem ipsum dolor sit amet consectetur, adipisicing elit.")
 
-document.getElementById("card1H4").innerHTML = lesson1.Text;
-document.getElementById("card2H4").innerHTML = lesson2.Text;
-document.getElementById("card3H4").innerHTML = lesson3.Text;
+const cardsImgs = ["card1Img", "card2Img", "card3Img"];
+const cardsText = ["card1H4", "card2H4", "card3H4"];
+const lessonss = [lesson1, lesson2, lesson3];
 
-var img = document.createElement("img");
-img.src = lesson1.Image;
-var src = document.getElementById("card1Img");
-src.appendChild(img);
+for (let i = 0 ; i < lessonss.length; i++) {
+    // Carga de imágenes
+    var img = document.createElement("img");
+    img.src = lessonss[i].Image;
+    var src = document.getElementById(cardsImgs[i]);
+    src.appendChild(img);
 
-var img = document.createElement("img");
-img.src = lesson2.Image;
-var src = document.getElementById("card2Img");
-src.appendChild(img);
-
-var img = document.createElement("img");
-img.src = lesson3.Image;
-var src = document.getElementById("card3Img");
-src.appendChild(img);
+    //Carga de texto
+    document.getElementById(cardsText[i]).innerHTML = lessonss[i].Text;
+}
