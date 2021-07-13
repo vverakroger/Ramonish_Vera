@@ -53,15 +53,36 @@
         <div id="contact__content">
             <h2>Contact</h2>
             <div id="contact__sub__content">
-                <h3>ADDRESS</h3>
-                <h4>Montevideo, Uruguay</h3>
-                <h3>EMAIL ADDRESS</h3>
-                <h4>xxxxxxxx@gmail.com</h3>
-                <h3>PHONE NUMBER</h3>
-                <h4>(+598) XX XXX XXX</h3>
+                <form name="contactForm" action="javascript:void(0);" onsubmit="return validateForm()" method="post">
+                    <h3>NAME</h3>
+                    <input type="text" name="cf_name">
+                    <h3>EMAIL ADDRESS</h3>
+                    <input type="Email" name="cf_email">
+                    <h3>MESSAGE</h3>
+                    <input type="text" name="cf_message">
+                    <div>
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
             </div>
         </div>
     </section>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["contactForm"]["cf_name"].value;
+            var y = document.forms["contactForm"]["cf_email"].value;
+            var z = document.forms["contactForm"]["cf_message"].value;
+            if (x == "" || y == "" || z == "") {
+                alert("Upss! No field can be empty");
+            }else{
+                alert("Congrats! Sent your message successfully!");
+                document.forms["contactForm"]["cf_name"].value='';
+                document.forms["contactForm"]["cf_email"].value='';
+                document.forms["contactForm"]["cf_message"].value='';
+            }
+        }
+    </script>
 
     <script src="js/onScrollNav.js";>
         //Esconder NavBar superior al scrollear
@@ -70,6 +91,8 @@
     <script src="js/student.js";>
         //Class Student
     </script>
+
+   
 </body>
 
 </html>
