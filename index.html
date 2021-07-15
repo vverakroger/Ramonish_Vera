@@ -20,7 +20,7 @@
                 <img src="css/multimedia/logo.png">
             </div>
             <div id="nav1__Login">
-                <a id="nav1_LoginBtt" href="" onclick="isUservalid();"><img src="css/multimedia/login.png"></a>
+                <a id="nav1_LoginBtt" onclick="openForm();"><img src="css/multimedia/login.png"></a>
             </div>
         </nav>
         <nav id="nav2" class="navbar">
@@ -60,6 +60,7 @@
                     <input type="Email" name="cf_email">
                     <h3>MESSAGE</h3>
                     <input type="text" name="cf_message">
+                    <label id="contact_content_msg"><b></b></label>
                     <div>
                         <input type="submit" value="ENVIAR">
                     </div>
@@ -68,30 +69,34 @@
         </div>
     </section>
 
-    <script>
-        function validateForm() {
-            var x = document.forms["contactForm"]["cf_name"].value;
-            var y = document.forms["contactForm"]["cf_email"].value;
-            var z = document.forms["contactForm"]["cf_message"].value;
-            if (x == "" || y == "" || z == "") {
-                alert("Upss! No field can be empty");
-            }else{
-                alert("Congrats! Sent your message successfully!");
-                document.forms["contactForm"]["cf_name"].value='';
-                document.forms["contactForm"]["cf_email"].value='';
-                document.forms["contactForm"]["cf_message"].value='';
-            }
-        }
+    <div class="form-popup" id="myForm">
+        <form action="javascript:void(0);" class="form-container">
+            <h3>Login</h3>
+        
+            <label for="email"><h4>Email</h4></label>
+            <input id="un" type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><h4>Password</h4></label>
+            <input id="pw" type="password" placeholder="Enter Password" name="psw" required>
+            
+            <label id="msg"><h4></h4></label>
+
+            <button type="submit" class="btn" onclick="isUservalid()" >Login</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script src="js/login.js";>
+        //Validate Login
+    </script>
+
+    <script src="js/contact.js";>
+        //Validate Contact Form
     </script>
 
     <script src="js/onScrollNav.js";>
-        //Esconder NavBar superior al scrollear
+        //Scroll NavBar Movement
     </script>
-
-    <script src="js/student.js";>
-        //Class Student
-    </script>
-
    
 </body>
 
