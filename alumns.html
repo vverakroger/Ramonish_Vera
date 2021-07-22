@@ -47,7 +47,7 @@
                         <div id="card1Img"></div>
                         <div class="card-body">
                             <h4 id="card1H4" class="card-title"></h4>
-                            <a class="lessons_button button1" onclick="classesCost();">Calculate Price</a>
+                            <a class="lessons_button button1" >Start Lesson</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                         <div id="card2Img"></div>
                         <div class="card-body">
                             <h4 id="card2H4" class="card-title"></h4>
-                            <a class="lessons_button button1" onclick="classesCost();">Calculate Price</a>
+                            <a class="lessons_button button1">Start Lesson</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                         <div id="card3Img"></div>
                         <div class="card-body">
                             <h4 id="card3H4" class="card-title"></h4>
-                            <a class="lessons_button button1" onclick="classesCost();">Calculate Price</a>
+                            <a class="lessons_button button1">Start Lesson</a>
                         </div>
                     </div>
                 </div>
@@ -87,15 +87,19 @@
         </div>
     </section>
 
+    <script>
+        jQuery(document).ready(function($) {
+            $(".button1").click(function(){
+                alert("The paragraph was clicked.");
+            });
+        });
+    </script>
+
     <script src="js/onScrollNav.js";>
         //Esconder NavBar superior al scrollear
     </script>
 
     <script src="js/lesson.js";>
-        //Class Lesson
-    </script>
-
-    <script src="js/fee.js";>
         //Class Lesson
     </script>
 
