@@ -24,3 +24,9 @@ for (let i = 0 ; i < lessonss.length; i++) {
     //Carga de texto
     document.getElementById(cardsText[i]).innerHTML = lessonss[i].Text;
 }
+
+jQuery(document).ready(function($) {
+    $(".button1").click(function(){
+        alert("The paragraph was clicked.");
+    });
+});
