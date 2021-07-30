@@ -1,8 +1,15 @@
-const users = '{ "students" : [' +
-'{ "email":"mail@gmail.com", "password":"abc123" },' +
-'{ "email":"mail2@gmail.com", "password":"123abc" } ]}';
+//const users = '{ "students" : [' +
+//'{ "email":"mail@gmail.com", "password":"abc123" },' +
+//'{ "email":"mail2@gmail.com", "password":"123abc" } ]}';
+//const uss = JSON.parse(users);
 
-const uss = JSON.parse(users);
+function getDataDB() {
+    fetch("db/db.json")
+      .then(res => res.json())
+      .then(data => console.log(data));
+  }
+
+let uss = getDataDB();
 
 function isUservalid() {
     var userId = document.getElementById("un").value;

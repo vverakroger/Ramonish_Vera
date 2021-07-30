@@ -1,0 +1,6 @@
+{ "students" : 
+   [
+      { "email":"mail@gmail.com", "password":"abc123" },
+      { "email":"mail2@gmail.com", "password":"123abc" } 
+   ]
+}
