@@ -38,6 +38,6 @@ for (let i = 0; i < lessonss.length; i++) {
 //Alert JQuery
 jQuery(document).ready(function($) {
     $(".button1").click(function(){
-        alert("The paragraph was clicked.");
+        //alert("The paragraph was clicked.");
     });
 });
