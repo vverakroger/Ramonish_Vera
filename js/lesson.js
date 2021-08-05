@@ -33,7 +33,7 @@ for (let i = 0; i < lessonss.length; i++) {
 //src.appendChild(img);
 
 //Carga de texto
-document.getElementById(cardsText[i]).innerHTML = lessonss[i].Text;
+//document.getElementById(cardsText[i]).innerHTML = lessonss[i].Text;
 
 //Alert JQuery
 jQuery(document).ready(function($) {
