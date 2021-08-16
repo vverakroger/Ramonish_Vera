@@ -1,0 +1,19 @@
+{  "teoric" : 
+   [
+      { "title":"Lecture 1", "src":"css/multimedia/teoric1.png" },
+      { "title":"Lecture 2", "src":"css/multimedia/teoric2.png" },
+      { "title":"Lecture 3", "src":"css/multimedia/teoric3.png" }
+   ],
+   "grammar" : 
+   [
+      { "title":"Grammar and Vocabulary 1", "src":"css/multimedia/grammar1.png" },
+      { "title":"Grammar and Vocabulary 2", "src":"css/multimedia/grammar2.png" },
+      { "title":"Grammar and Vocabulary 3", "src":"css/multimedia/grammar3.png" }
+   ],
+   "practice" : 
+   [
+      { "title":"Practice 1", "src":"css/multimedia/practice1.png" },
+      { "title":"Practice 2", "src":"css/multimedia/practice2.png" },
+      { "title":"Practice 3", "src":"css/multimedia/practice3.png" }
+   ]
+ }

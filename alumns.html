@@ -47,7 +47,7 @@
                         <div id="card1Img"></div>
                         <div class="card-body">
                             <h4 id="card1H4" class="card-title"></h4>
-                            <a class="lessons_button button1" >Start Lesson</a>
+                            <a class="lessons_button button1" data-toggle="modal" data-target="#classesModal" onclick="loadTeoric()">Start Lesson</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                         <div id="card2Img"></div>
                         <div class="card-body">
                             <h4 id="card2H4" class="card-title"></h4>
-                            <a class="lessons_button button1">Start Lesson</a>
+                            <a class="lessons_button button1" data-toggle="modal" data-target="#classesModal" onclick="loadGrammar()">Start Lesson</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                         <div id="card3Img"></div>
                         <div class="card-body">
                             <h4 id="card3H4" class="card-title"></h4>
-                            <a class="lessons_button button1">Start Lesson</a>
+                            <a class="lessons_button button1" data-toggle="modal" data-target="#classesModal" onclick="loadPractice()">Start Lesson</a>
                         </div>
                     </div>
                 </div>
@@ -77,18 +77,61 @@
         <div id="questions__content">
             <h2>Questions</h2>
             <div id="questions__sub__content">
-                <h3>ADDRESS</h3>
-                <h4>Montevideo, Uruguay</h3>
                 <h3>EMAIL ADDRESS</h3>
-                <h4>xxxxxxxx@gmail.com</h3>
+                <h4>xxxxxxxx@gmail.com</h4>
                 <h3>PHONE NUMBER</h3>
-                <h4>(+598) XX XXX XXX</h3>
+                <h4>(+598) XX XXX XXX</h4>
             </div>
         </div>
     </section>
 
+    <!-- Modal -->
+    <div class="modal fade" id="classesModal" tabindex="-1" role="dialog" aria-labelledby="teoricModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Lessons</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <h4 id="carouselTitle1"></h4>
+                        <img id="carouselImg1" class="d-block w-100" src="" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <h4 id="carouselTitle2" ></h4>
+                        <img id="carouselImg2" class="d-block w-100" src="" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <h4 id="carouselTitle3"></h4>
+                        <img id="carouselImg3" class="d-block w-100" src="" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <script src="js/onScrollNav.js";>
-        //Esconder NavBar superior al scrollear
+        //Scroll navBar movement
     </script>
 
     <script src="js/lesson.js";>
@@ -97,6 +140,10 @@
 
     <script src="js/logout.js";>
         //Logout
+    </script>
+
+    <script src="js/material.js";>
+        //Load lessons material
     </script>
 
 </body>

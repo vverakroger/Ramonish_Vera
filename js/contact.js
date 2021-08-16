@@ -1,3 +1,4 @@
+//Validate contact information
 function validateForm() {
     var x = document.forms["contactForm"]["cf_name"].value;
     var y = document.forms["contactForm"]["cf_email"].value;

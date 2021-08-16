@@ -1,4 +1,4 @@
-//Object Lesson
+//Object Lesson 
 class Lesson{
     constructor(anImage, aText) {
         this.Image = anImage;
@@ -6,18 +6,20 @@ class Lesson{
     }
 }
 
-const lesson1 = new Lesson ("css/multimedia/class.png","Lorem ipsum dolor sit amet consectetur, adipisicing elit.")
-const lesson2 = new Lesson ("css/multimedia/grammar.png","Lorem ipsum dolor sit amet consectetur, adipisicing elit.")
-const lesson3 = new Lesson ("css/multimedia/practice.png","Lorem ipsum dolor sit amet consectetur, adipisicing elit.")
+//Object inizialitation
+const lesson1 = new Lesson ("css/multimedia/teoric.png","Most usefull class material recopilation")
+const lesson2 = new Lesson ("css/multimedia/grammar.png","Grammar and vocabulary review from classes")
+const lesson3 = new Lesson ("css/multimedia/practice.png","Practical excersices to do at home")
 
-const cardsImgs = ["card1Img", "card2Img", "card3Img"];
+//Const declaration
 const cardsText = ["card1H4", "card2H4", "card3H4"];
 const lessonss = [lesson1, lesson2, lesson3];
 
 
-// Carga de imágenes    JQuery
+// Img and text load with JQuery and Vanilla
 for (let i = 0; i < lessonss.length; i++) {
     $(document).ready(function() {
+        document.getElementById(cardsText[i]).innerHTML = lessonss[i].Text;
         var url = lessonss[i].Image;
         var image = new Image();
         image.src = url;
@@ -27,17 +29,4 @@ for (let i = 0; i < lessonss.length; i++) {
     });
 }
 
-//var img = document.createElement("img");
-//img.src = lessonss[i].Image;
-//var src = document.getElementById(cardsImgs[i]);
-//src.appendChild(img);
 
-//Carga de texto
-//document.getElementById(cardsText[i]).innerHTML = lessonss[i].Text;
-
-//Alert JQuery
-jQuery(document).ready(function($) {
-    $(".button1").click(function(){
-        //alert("The paragraph was clicked.");
-    });
-});

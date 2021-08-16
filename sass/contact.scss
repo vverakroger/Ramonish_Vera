@@ -24,17 +24,40 @@
         opacity: 0.8;
         #contact__sub__content{
             height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            h3{
-                font-family: $fontImprenta;
-                font-size: 1.6vw;
-            }
-            h4{
-                font-family: $fontCursiva;
-                font-size: 1.6vw;
+            form{
+                height: 60vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                h3{
+                    font-family: $fontImprenta;
+                    font-size: 1.6vw;
+                }
+                h4{
+                    font-family: $fontCursiva;
+                    font-size: 1.6vw;
+                }
+                .button2{
+                    font-family: $fontCursiva;
+                    font-size: 1vw;
+                    display:inline-block;
+                    padding:0.35em 1.2em;
+                    border:0.1em solid $terciario;
+                    margin:0 0.3em 0.3em 0;
+                    border-radius:0.12em;
+                    box-sizing: border-box;
+                    font-weight:300;
+                    color:$terciario;
+                    text-align:center;
+                    cursor: pointer;
+                    &:hover{
+                    color:$primario;
+                    border:0.1em solid $primario;
+                    }
+                }
             }
         }
+        
     }
 }
+

@@ -1,4 +1,4 @@
-//Esconder NavBar superior al scrollear
+//Undisplay NavBar on scroll
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
