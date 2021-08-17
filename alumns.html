@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <div class="fixed-top">
         <nav id="nav1" class="navbar">
             <div id="nav1__Logo">
@@ -31,14 +32,14 @@
             </div>
         </nav>
     </div>
-
+    <!-- Home -->
     <section id="home" >
         <div id="home__content">
             <h1>Welcome</h1>
             <h3>This seccion is made for you!</h3>
         </div>
     </section>
-
+    <!-- Lessons -->
     <section id="lessons">
         <div class="container">
             <div class="row">
@@ -47,7 +48,7 @@
                         <div id="card1Img"></div>
                         <div class="card-body">
                             <h4 id="card1H4" class="card-title"></h4>
-                            <a class="lessons_button button1" data-toggle="modal" data-target="#classesModal" onclick="loadTeoric()">Start Lesson</a>
+                            <a class="lessons_button button1" data-toggle="modal" data-target="#classesModal" onclick="loadMaterial('teoric')">Start Lesson</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +57,7 @@
                         <div id="card2Img"></div>
                         <div class="card-body">
                             <h4 id="card2H4" class="card-title"></h4>
-                            <a class="lessons_button button1" data-toggle="modal" data-target="#classesModal" onclick="loadGrammar()">Start Lesson</a>
+                            <a class="lessons_button button1" data-toggle="modal" data-target="#classesModal" onclick="loadMaterial('grammar')">Start Lesson</a>
                         </div>
                     </div>
                 </div>
@@ -65,14 +66,14 @@
                         <div id="card3Img"></div>
                         <div class="card-body">
                             <h4 id="card3H4" class="card-title"></h4>
-                            <a class="lessons_button button1" data-toggle="modal" data-target="#classesModal" onclick="loadPractice()">Start Lesson</a>
+                            <a class="lessons_button button1" data-toggle="modal" data-target="#classesModal" onclick="loadMaterial('practice')">Start Lesson</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- Questions -->
     <section id="questions">
         <div id="questions__content">
             <h2>Questions</h2>
@@ -85,7 +86,7 @@
         </div>
     </section>
 
-    <!-- Modal -->
+    <!-- Modal for each lesson -->
     <div class="modal fade" id="classesModal" tabindex="-1" role="dialog" aria-labelledby="teoricModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -130,6 +131,7 @@
         </div>
     </div>
 
+    <!-- Javascript -->
     <script src="js/onScrollNav.js";>
         //Scroll navBar movement
     </script>

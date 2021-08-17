@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <div class="fixed-top">
         <nav id="nav1" class="navbar">
             <div id="nav1__Logo">
@@ -31,13 +32,14 @@
             </div>
         </nav>
     </div>
+    <!-- Home -->
     <section id="home" >
         <div id="home__content">
             <h1>Ramonish</h1>
             <h3>Personalized Online Spanish Classes</h3>
         </div>
     </section>
-
+    <!-- About Me -->
     <section id="aboutMe">
         <div>
             <img src="css/multimedia/me.png" alt="">
@@ -51,7 +53,7 @@
             </ul>
         </div>
     </section>
-
+    <!-- Contact -->
     <section id="contact">
         <div id="contact__content">
             <h2>Contact</h2>
@@ -63,15 +65,15 @@
                     <input type="Email" name="cf_email">
                     <h3>MESSAGE</h3>
                     <input type="text" name="cf_message" height="20vh">
-                    <label id="contact_content_msg"><b></b></label>
+                    <label id="contact_content_msg"><b> </b></label>
                     <div>
-                        <input type="submit" class="button2" value="ENVIAR">
+                        <input id="contact_content_sub" type="submit" class="button2" value="ENVIAR">
                     </div>
                 </form>
             </div>
         </div>
     </section>
-
+    <!-- Login Popup -->
     <div class="form-popup" id="myForm">
         <form action="javascript:void(0);" class="form-container">
             <h3>Login</h3>
@@ -85,10 +87,11 @@
             <label id="msg"><h4></h4></label>
 
             <button type="submit" class="btn" onclick="isUservalid()" >Login</button>
-            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            <button id="myForm_cancel" type="submit" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
     </div>
 
+    <!-- Javascript -->
     <script src="js/login.js";>
         //Validate login authentication
     </script>
@@ -101,6 +104,10 @@
         //Scroll navBar movement
     </script>
    
+   
+    <script src="js/animations.js";>
+        //Button animations
+    </script>
 </body>
 
 </html>
